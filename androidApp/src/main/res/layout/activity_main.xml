@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_cream"
+    android:padding="@dimen/spacing_medium">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_large" />
+
+    <!-- Подсказка: какая грудь следующая -->
+    <TextView
+        android:id="@+id/tv_next_breast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/next_hint_padding"
+        android:background="@drawable/bg_next_hint"
+        android:backgroundTint="@color/next_hint_background"
+        android:text="@string/next_breast"
+        android:textSize="@dimen/text_headline"
+        android:textColor="@color/next_hint_text"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_large"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Таймер -->
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="@dimen/text_title"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="@dimen/spacing_medium"
+        app:layout_constraintTop_toBottomOf="@id/tv_next_breast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Круговая диаграмма -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/spacing_large"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ключевые метрики -->
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_medium"
+        android:background="@color/cream"
+        android:backgroundTint="@color/cream"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:textSize="@dimen/text_body"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/pie_chart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Кнопки: Левая, Правая, Сон, Срыгнул -->
+    <Button
+        android:id="@+id/btn_left"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:text="@string/left_breast"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/left_breast_accent"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_right"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Button
+        android:id="@+id/btn_right"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:text="@string/right_breast"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/right_breast_accent"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary"
+        app:layout_constraintStart_toEndOf="@id/btn_left"
+        app:layout_constraintEnd_toStartOf="@id/btn_sleep"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Button
+        android:id="@+id/btn_sleep"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:text="@string/sleep"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/sleep_accent"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary"
+        app:layout_constraintStart_toEndOf="@id/btn_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Button
+        android:id="@+id/btn_spit"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:text="@string/spit_up"
+        android:textColor="@color/spit_up_accent"
+        app:layout_constraintTop_toBottomOf="@id/btn_left"
+        app:layout_constraintStart_toStartOf="@id/btn_left"
+        app:layout_constraintEnd_toEndOf="@id/btn_left" />
+
+    <!-- Кнопка настроек -->
+    <Button
+        android:id="@+id/btn_settings"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/spacing_medium" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

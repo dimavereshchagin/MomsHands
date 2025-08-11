@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные фоновые цвета -->
+    <color name="cream">#FFF9C4</color> <!-- Нежно-кремовый — основной фон -->
+    <color name="light_cream">#FFFDE7</color> <!-- Очень светлый крем — фон экранов -->
+    <color name="warm_beige">#F5E6C8</color> <!-- Тёплое бежевое — акценты -->
+
+    <!-- Цвета для грудей и активности -->
+    <color name="left_breast_accent">#FFCDD2</color> <!-- Нежно-розовый — левая грудь -->
+    <color name="right_breast_accent">#E8EAF6</color> <!-- Лаванда — правая грудь -->
+    <color name="sleep_accent">#E0F7FA</color> <!-- Мятный — сон -->
+    <color name="spit_up_accent">#FFCCBC</color> <!-- Персик — срыгивания -->
+
+    <!-- Цвета для тепловой карты (градация от спокойного к активному) -->
+    <color name="heat_low">#BBDEFB</color> <!-- Голубой — низкая активность -->
+    <color name="heat_medium">#81D4FA</color> <!-- Светло-голубой — средняя -->
+    <color name="heat_high">#0288D1</color> <!-- Синий — высокая -->
+    <color name="heat_peak">#D32F2F</color> <!-- Красный — пик активности -->
+
+    <!-- Цвета текста -->
+    <color name="text_primary">#333333</color> <!-- Тёмно-серый — основной текст -->
+    <color name="text_secondary">#666666</color> <!-- Серый — второстепенный -->
+    <color name="text_hint">#999999</color> <!-- Светло-серый — подсказки -->
+
+    <!-- Интерактивные элементы -->
+    <color name="button_primary">#FFB74D</color> <!-- Тёплый оранжевый — основная кнопка -->
+    <color name="button_secondary">#757575</color> <!-- Серый — второстепенная -->
+    <color name="divider">#EEEEEE</color> <!-- Лёгкий разделитель -->
+
+    <!-- Выделение "следующей груди" -->
+    <color name="next_hint_background">#FFF176</color> <!-- Светло-жёлтый — мягко привлекает внимание -->
+    <color name="next_hint_text">#333333</color> <!-- Читаемый текст -->
+</resources>

@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/sleep_accent">
+
+    <!-- Полумесяц — символ сна -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,2C7,2 3,5 3,10C3,15 7,18 12,18C17,18 21,15 21,10C21,5 17,2 12,2ZM12,4C15,4 18,6 18,10C18,14 15,16 12,16C9,16 6,14 6,10C6,6 9,4 12,4Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="@color/sleep_accent" />
+
+    <!-- Звёздочка — нежность, мечты -->
+    <path
+        android:fillColor="@color/sleep_accent"
+        android:alpha="0.3"
+        android:pathData="M12,6L13.5,10L18,10L14.5,12.5L16,16L12,14L8,16L9.5,12.5L6,10L10.5,10Z"
+        android:strokeWidth="0.5"
+        android:strokeColor="@color/sleep_accent" />
+
+</vector>

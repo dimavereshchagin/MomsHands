@@ -1,0 +1,68 @@
+<resources>
+    <!-- App Name (brand, never translated) -->
+    <string name="app_name">Mom's Hands</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome, Mom 💖</string>
+    <string name="onboarding_tracking">Simple Tracking</string>
+    <string name="onboarding_insights">Smart Insights</string>
+    <string name="onboarding_welcome_message">With Mom's Hands, you’ll never worry about which breast you used last. We’ll help you find your rhythm and care for yourself with ease.</string>
+    <string name="onboarding_tracking_message">Tap \"Left\" or \"Right\" breast — the timer starts automatically. Log sleep and spit-ups with a single tap. Everything is saved and analyzed.</string>
+    <string name="onboarding_insights_message">The app will notice if you feed more from the right breast in the evenings or if spit-ups happen after morning feedings — and gently suggest how to balance it.</string>
+
+    <!-- Main Screen -->
+    <string name="left_breast">Left Breast</string>
+    <string name="right_breast">Right Breast</string>
+    <string name="sleep">Sleep</string>
+    <string name="spit_up">Spit Up</string>
+    <string name="next_breast">Next: %s</string>
+    <string name="timer_running">Timer: %s</string>
+    <string name="settings">Settings</string>
+
+    <!-- Statistics -->
+    <string name="stats">Statistics</string>
+    <string name="insights">Insights</string>
+    <string name="export_pdf">Export to PDF</string>
+    <string name="export_success">Report saved</string>
+    <string name="export_error">Error creating PDF</string>
+
+    <!-- Notifications -->
+    <string name="quick_access_hint">Quick access to feeding</string>
+    <string name="reminder_title">Reminder</string>
+    <string name="digest_title">Daily Digest</string>
+
+    <!-- Notification Channels -->
+    <string name="channel_quick_title">Quick Access</string>
+    <string name="channel_quick_desc">Buttons on lock screen</string>
+    <string name="channel_reminder_title">Reminders</string>
+    <string name="channel_reminder_desc">Adaptive feeding reminders</string>
+    <string name="channel_digest_title">Activity Digest</string>
+    <string name="channel_digest_desc">Daily summary</string>
+
+    <!-- Settings -->
+    <string name="pref_language">Language</string>
+    <string name="pref_language_summary">Choose your interface language</string>
+    <string name="pref_dark_theme">Dark Theme</string>
+    <string name="pref_dark_theme_summary">Change the app's appearance</string>
+    <string name="pref_target_feeding">Feeding Interval</string>
+    <string name="pref_target_feeding_summary">Target time between feedings</string>
+    <string name="pref_target_sleep">Sleep Duration</string>
+    <string name="pref_target_sleep_summary">Target length of one sleep</string>
+    <string name="pref_enable_feeding_reminders">Feeding Reminders</string>
+    <string name="pref_enable_feeding_reminders_summary">Adapts to your baby's rhythm</string>
+    <string name="pref_enable_sleep_reminders">Sleep Reminders</string>
+    <string name="pref_enable_sleep_reminders_summary">Notifications before sleep</string>
+    <string name="pref_active_child">Active Child</string>
+    <string name="pref_active_child_summary">Select the child to track</string>
+    <string name="pref_backup">Create Backup</string>
+    <string name="pref_backup_summary">Save data to device</string>
+    <string name="pref_restore">Restore from Backup</string>
+    <string name="pref_restore_summary">Load saved data</string>
+
+    <!-- Misc -->
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="spit_volume">Volume</string>
+    <string name="little">Little</string>
+    <string name="much">Much</string>
+</resources>

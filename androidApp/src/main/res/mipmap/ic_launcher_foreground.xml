@@ -1,0 +1,43 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Основной символ: две капли, образующие сердце -->
+    <!-- Левая капля (розовая) -->
+    <path
+        android:name="left_drop"
+        android:fillColor="@color/left_breast_accent"
+        android:pathData="M40,60 C35,50 35,40 40,30 C45,20 50,20 55,30 C60,40 60,50 55,60 C50,70 45,70 40,60 Z"
+        android:strokeWidth="1"
+        android:strokeColor="@color/left_breast_accent" />
+
+    <!-- Правая капля (лаванда) -->
+    <path
+        android:name="right_drop"
+        android:fillColor="@color/right_breast_accent"
+        android:pathData="M68,60 C63,50 63,40 68,30 C73,20 78,20 83,30 C88,40 88,50 83,60 C78,70 73,70 68,60 Z"
+        android:strokeWidth="1"
+        android:strokeColor="@color/right_breast_accent" />
+
+    <!-- Центральная связующая волна — символ единства и заботы -->
+    <path
+        android:name="connecting_wave"
+        android:fillColor="@color/warm_beige"
+        android:alpha="0.3"
+        android:pathData="M55,60 C60,55 70,55 75,60"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/warm_beige" />
+
+    <!-- Маленькая звёздочка в центре — символ надежды и мечты -->
+    <path
+        android:name="star"
+        android:fillColor="@color/text_primary"
+        android:alpha="0.5"
+        android:pathData="M60,50 L63,58 L72,58 L65,63 L68,71 L60,67 L52,71 L55,63 L48,58 L57,58 Z"
+        android:strokeWidth="0.5"
+        android:strokeColor="@color/text_primary" />
+
+</vector>

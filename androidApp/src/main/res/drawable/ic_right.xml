@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/right_breast_accent">
+
+    <!-- Симметричная капля — правая грудь -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,2C8.5,2 5.5,4.5 5.5,8C5.5,12 12,18 12,18S18.5,12 18.5,8C18.5,4.5 15.5,2 12,2Z"
+        android:strokeWidth="1.5"
+        android:strokeColor="@color/right_breast_accent" />
+
+    <!-- Лёгкая волна — в другом направлении -->
+    <path
+        android:fillColor="@color/right_breast_accent"
+        android:alpha="0.2"
+        android:pathData="M7,10C8,9 10,8 12,8S16,9 17,10"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeColor="@color/right_breast_accent" />
+
+</vector>

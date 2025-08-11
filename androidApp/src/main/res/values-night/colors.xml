@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Фон и поверхности -->
+    <color name="dark_background">#121212</color> <!-- Глубокий тёмный — не режет глаза -->
+    <color name="dark_surface">#1E1E1E</color> <!-- Поверхности (карточки, панели) -->
+
+    <!-- Цвета акцентов -->
+    <color name="warm_beige_dark">#3D342A</color> <!-- Тёплое бежевое в тёмной теме -->
+    <color name="button_primary">#FFB74D</color> <!-- Оранжевый — остаётся тёплым -->
+
+    <!-- Текст -->
+    <color name="text_primary_night">#E1E1E1</color> <!-- Почти белый, но мягче -->
+    <color name="text_secondary_night">#B0B0B0</color> <!-- Серый — второстепенный текст -->
+    <color name="text_hint_night">#808080</color> <!-- Ещё темнее — подсказки -->
+
+    <!-- Подсказка "Следующая грудь" -->
+    <color name="next_hint_background_night">#3A3A3A</color> <!-- Тёмно-серый — мягко выделяется -->
+    <color name="next_hint_text_night">#FFFFFF</color> <!-- Белый — контрастно, но не резко -->
+
+    <!-- Цвета для графиков (тёплые, не яркие) -->
+    <color name="left_breast_accent_night">#D19BA0</color> <!-- Приглушённый розовый -->
+    <color name="right_breast_accent_night">#A5A9C8</color> <!-- Приглушённая лаванда -->
+    <color name="sleep_accent_night">#80B5BE</color> <!-- Приглушённый мятный -->
+    <color name="spit_up_accent_night">#D9A596</color> <!-- Приглушённый персик -->
+
+    <!-- Тепловая карта (тёплая градация) -->
+    <color name="heat_low_night">#5A8CBB</color> <!-- Глубокий голубой -->
+    <color name="heat_medium_night">#4A9ED4</color> <!-- Светло-голубой -->
+    <color name="heat_high_night">#0277BD</color> <!-- Синий -->
+    <color name="heat_peak_night">#C62828</color> <!-- Тёмно-красный -->
+
+    <!-- Кнопки -->
+    <color name="text_on_button">#121212</color> <!-- Тёмный текст на светлых кнопках -->
+</resources>

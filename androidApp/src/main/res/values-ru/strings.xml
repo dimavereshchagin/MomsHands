@@ -1,0 +1,68 @@
+<resources>
+    <!-- Название приложения (бренд, не переводится) -->
+    <string name="app_name">Mom's Hands</string>
+
+    <!-- Онбординг -->
+    <string name="onboarding_welcome">Добро пожаловать, мама 💖</string>
+    <string name="onboarding_tracking">Простое отслеживание</string>
+    <string name="onboarding_insights">Умные подсказки</string>
+    <string name="onboarding_welcome_message">С Mom's Hands вы больше не будете беспокоиться о том, какой грудью кормили в последний раз. Мы поможем вам найти свой ритм и заботиться о себе с лёгкостью.</string>
+    <string name="onboarding_tracking_message">Нажмите «Левая» или «Правая» грудь — таймер запустится автоматически. Фиксируйте сон и срыгивания одним касанием. Всё сохраняется и анализируется.</string>
+    <string name="onboarding_insights_message">Приложение заметит, что вы чаще кормите правой грудью по вечерам, или что срыгивания происходят после утренних кормлений — и подскажет, как всё сбалансировать.</string>
+
+    <!-- Главный экран -->
+    <string name="left_breast">Левая грудь</string>
+    <string name="right_breast">Правая грудь</string>
+    <string name="sleep">Сон</string>
+    <string name="spit_up">Срыгнул</string>
+    <string name="next_breast">Следующая: %s</string>
+    <string name="timer_running">Таймер: %s</string>
+    <string name="settings">Настройки</string>
+
+    <!-- Статистика -->
+    <string name="stats">Статистика</string>
+    <string name="insights">Инсайты</string>
+    <string name="export_pdf">Экспорт в PDF</string>
+    <string name="export_success">Отчёт сохранён</string>
+    <string name="export_error">Ошибка при создании PDF</string>
+
+    <!-- Уведомления -->
+    <string name="quick_access_hint">Быстрый доступ к кормлению</string>
+    <string name="reminder_title">Напоминание</string>
+    <string name="digest_title">Ежедневный дайджест</string>
+
+    <!-- Каналы уведомлений -->
+    <string name="channel_quick_title">Быстрый доступ</string>
+    <string name="channel_quick_desc">Кнопки на экране блокировки</string>
+    <string name="channel_reminder_title">Напоминания</string>
+    <string name="channel_reminder_desc">Адаптивные уведомления о кормлении</string>
+    <string name="channel_digest_title">Дайджест активности</string>
+    <string name="channel_digest_desc">Ежедневный отчёт</string>
+
+    <!-- Настройки -->
+    <string name="pref_language">Язык</string>
+    <string name="pref_language_summary">Выберите язык интерфейса</string>
+    <string name="pref_dark_theme">Тёмная тема</string>
+    <string name="pref_dark_theme_summary">Сменить внешний вид приложения</string>
+    <string name="pref_target_feeding">Интервал кормления</string>
+    <string name="pref_target_feeding_summary">Целевой интервал между кормлениями</string>
+    <string name="pref_target_sleep">Продолжительность сна</string>
+    <string name="pref_target_sleep_summary">Целевая длительность одного сна</string>
+    <string name="pref_enable_feeding_reminders">Напоминания о кормлении</string>
+    <string name="pref_enable_feeding_reminders_summary">Подстраивается под ритм ребёнка</string>
+    <string name="pref_enable_sleep_reminders">Напоминания о сне</string>
+    <string name="pref_enable_sleep_reminders_summary">Уведомления перед сном</string>
+    <string name="pref_active_child">Активный ребёнок</string>
+    <string name="pref_active_child_summary">Выберите ребёнка для отслеживания</string>
+    <string name="pref_backup">Создать резервную копию</string>
+    <string name="pref_backup_summary">Сохранить данные на устройство</string>
+    <string name="pref_restore">Восстановить из копии</string>
+    <string name="pref_restore_summary">Загрузить сохранённые данные</string>
+
+    <!-- Разное -->
+    <string name="loading">Загрузка...</string>
+    <string name="error">Ошибка</string>
+    <string name="spit_volume">Объём</string>
+    <string name="little">Немного</string>
+    <string name="much">Много</string>
+</resources>

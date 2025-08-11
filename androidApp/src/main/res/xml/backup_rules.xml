@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Включить базу данных -->
+    <include domain="database" path="moms_hands_database" />
+
+    <!-- Включить настройки -->
+    <shared-preferences />
+
+    <!-- Исключить временные файлы -->
+    <exclude domain="file" path="log.txt" />
+    <exclude domain="cache" />
+</full-backup-content>

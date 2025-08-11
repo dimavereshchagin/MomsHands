@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Разрешения -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MomsHands"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="34"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Главная активность -->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.MomsHands.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Экран обучения -->
+        <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MomsHands.NoActionBar" />
+
+        <!-- Экран настроек -->
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MomsHands.NoActionBar" />
+
+        <!-- Foreground Service для быстрого доступа -->
+        <service
+            android:name=".ui.service.QuickAccessService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialEffect"
+            tools:ignore="ForegroundServiceTypeRequired" />
+
+        <!-- Notification Listener (опционально, для анализа) -->
+        <!-- <service
+            android:name=".ui.service.NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service> -->
+
+        <!-- WorkManager для умных напоминаний -->
+        <receiver
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="true" />
+
+        <!-- Резервное копирование -->
+        <meta-data
+            android:name="android.backup.api_key"
+            android:value="your_backup_key" />
+    </application>
+
+</manifest>
